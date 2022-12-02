@@ -27,8 +27,12 @@ int leastprime(int n)
     else
         for (int i = 2; i <= n; i++)
         {
-            if (n % i == 0 && i <= n)
+            if (n % i == 0)
+            {
+
                 f = i;
+                break;
+            }
         }
     return f;
 }
